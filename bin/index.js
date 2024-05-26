@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const yargs = require("yargs");
-
+const path = require("path");
 const options = yargs
  .usage("Usage: <filename>")
  .option("f", { alias: "name", describe: "file name", type: "string", demandOption: true })
@@ -11,7 +11,7 @@ const fs = require("node:fs");
 const { execSync} = require("child_process");
 console.log(options.name);
 
-var address = process.cwd()+'/'+options.name;
+var address = path.join(process.cwd(),options.name)
 
 try{
     if(!fs.existsSync(address)){
