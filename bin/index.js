@@ -9,6 +9,8 @@ const options = yargs
 
 const fs = require("node:fs");
 const { execSync} = require("child_process");
+console.log(options.name);
+
 var address = process.cwd()+'/'+options.filename;
 
 try{
