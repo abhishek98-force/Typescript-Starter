@@ -1,6 +1,6 @@
 # TypeScript Node.js Project Starter
 
-This project provides a simple script to set up a TypeScript project with Node.js. It initializes a basic project structure, configures TypeScript, installs necessary dependencies, and sets up Nodemon for development.
+This is a simple cli app to set up a TypeScript project with Node.js. It initializes a basic project structure, configures TypeScript, installs necessary dependencies, and sets up Nodemon for development.
 
 ## Usage
 
