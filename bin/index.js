@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 const yargs = require("yargs");
+
 const path = require("path");
+
 const options = yargs
  .usage("Usage: <filename>")
  .option("f", { alias: "name", describe: "file name", type: "string", demandOption: true })
